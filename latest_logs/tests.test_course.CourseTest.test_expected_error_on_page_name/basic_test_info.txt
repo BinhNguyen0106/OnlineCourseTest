@@ -1,0 +1,29 @@
+tests/test_course.py::CourseTest::test_expected_error_on_page_name
+--------------------------------------------------------------------
+Last Page: http://localhost:3000/
+ Duration: 5.98s
+  Browser: Chrome 119.0.6045.125
+   Driver: chromedriver 119.0.6045.105
+Timestamp: 1701897353  (Unix Timestamp)
+     Date: Wednesday, December 6, 2023
+     Time: 3:15:53 PM  (Canada Central Standard Time, UTC-06:00)
+--------------------------------------------------------------------
+Traceback:
+  File "G:\workspaces\Sem2_Business_Innovation_with_Development_Operations\Project\Example\OnlineCourseTest\tests\test_course.py", line 49, in test_expected_error_on_page_name
+    CoursePage.verify_page_name(self, expected_page_name, actual_page_name)
+  File "G:\workspaces\Sem2_Business_Innovation_with_Development_Operations\Project\Example\OnlineCourseTest\page_objects\course_page.py", line 48, in verify_page_name
+    return self.assert_equal(expected_result, actual_result)
+  File "G:\workspaces\Sem2_Business_Innovation_with_Development_Operations\Project\Example\OnlineCourseTest\venv\lib\site-packages\seleniumbase\fixtures\base_case.py", line 7275, in assert_equal
+    self.assertEqual(first, second, msg=msg)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "G:\workspaces\Sem2_Business_Innovation_with_Development_Operations\Project\Example\OnlineCourseTest\venv\lib\site-packages\seleniumbase\fixtures\base_case.py", line 8216, in fail
+    super().fail(msg)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+Exception: 'Baa Course' != 'Baa Baa Courses'
+- Baa Course
++ Baa Baa Courses
+?    ++++       +
